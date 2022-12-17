@@ -21,7 +21,7 @@ int B = int.Parse(inputLineB);
 int C = int.Parse(inputLineC);
 
 
-if (A > B) //(inputNumberA > inputNumberB && inputNumberA > inputNumberC ) ?
+if (A > B) 
 {
     if (A > C)
 
