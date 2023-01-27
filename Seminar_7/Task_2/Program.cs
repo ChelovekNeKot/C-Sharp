@@ -34,20 +34,6 @@ int[,] Fill2DArray(int rows, int cols, int arrMin, int arrMax)
     return arr;
 }
 
-// Печать результата
-void PrintResult(string prefix, string data)
-{
-    if (data.Equals("-1"))//метод возвращает нас к объекту в FindElement и спрашивает равен ли он ему.
-    {
-        Console.WriteLine("Элемент отсутствует");
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(prefix + data);
-    }
-}
-
 //Поиск элемента
 void FindElement(int rows, int cols, int[,] arr, int number)
 {
@@ -97,5 +83,3 @@ int[,] arr = Fill2DArray(rows, cols, 1, 9);
 Console.WriteLine($"Случайный массив {rows}x{cols}:");
 Print2DArrayColor(number, arr);
 FindElement(rows, cols, arr, number);
-
-// PrintResult("Искомый элемент: ", FindElement(rows, cols, arr, number).ToString());
