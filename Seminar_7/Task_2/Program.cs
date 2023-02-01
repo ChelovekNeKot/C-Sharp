@@ -83,3 +83,5 @@ int[,] arr = Fill2DArray(rows, cols, 1, 9);
 Console.WriteLine($"Случайный массив {rows}x{cols}:");
 Print2DArrayColor(number, arr);
 FindElement(rows, cols, arr, number);
+
+// PrintResult("Искомый элемент: ", FindElement(rows, cols, arr, number).ToString());
